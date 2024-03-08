@@ -1,0 +1,62 @@
+:root {
+  --beige-color: #F3E2D2;
+  --pink-color: #F3BBC4;
+  --brown-color: #C64A1B;
+  --black-color: black;
+
+  font-family: League Spartan, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--black-color);
+
+  scrollbar-width: thin;
+
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background-color: var(--beige-color);
+}
+
+.container {
+  max-width: 800px;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  color: var(--brown-color);
+  line-height: 0.9;
+  letter-spacing: -2px;
+  font-weight: 800;
+  text-align: left;
+}
+
+p {
+  margin: 0;
+  color: var(--black-color);
+  font-size: 1em;
+  line-height: 1.1;
+  font-weight: 600;
+  text-align: left;
+}
+
+#app {
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}

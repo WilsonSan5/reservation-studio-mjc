@@ -1,8 +1,10 @@
 <script setup>
 
 function redirectTo(url) {
-    window.location.href = url;
+    console.log(url)
+    window.location.href = url
 }
+
 </script>
 
 <template>

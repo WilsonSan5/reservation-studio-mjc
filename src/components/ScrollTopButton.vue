@@ -5,6 +5,7 @@ function scrollToTop() {
 }
 const isScrollingUp = ref()
 const windowTop = ref()
+let previousScrollPosition = 0;
 
 function onScroll() {
     // remove button when Calendly widget is on sight
@@ -12,6 +13,7 @@ function onScroll() {
         isScrollingUp.value = false
         return
     }
+
     if (window.top.scrollY > windowTop.value) {
         isScrollingUp.value = false
     } else {
@@ -45,5 +47,13 @@ onMounted(() => {
 .show {
     position: fixed;
     right: 15px !important;
+}
+
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media,
+_:future,
+:root #slide-up-btn {
+    bottom: 60px;
 }
 </style>

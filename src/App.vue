@@ -2,12 +2,13 @@
 import CalendlyComponent from "./components/CalendlyComponent.vue";
 import AccordeonMenuComponent from "./components/AccordeonMenuComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+
 import ScrollTopButton from "./components/ScrollTopButton.vue"
 </script>
 
 <template>
   <div class="container">
-    <h1>Réserve ton&nbsp;créneaux&nbsp;!</h1>
+    <h1>Réserve ton&nbsp;créneau&nbsp;!</h1>
     <h2>Studio de musique, MJC Boris Vian</h2>
   </div>
   <CalendlyComponent />

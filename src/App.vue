@@ -2,6 +2,7 @@
 import CalendlyComponent from "./components/CalendlyComponent.vue";
 import AccordeonMenuComponent from "./components/AccordeonMenuComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+
 import ScrollTopButton from "./components/ScrollTopButton.vue"
 </script>
 

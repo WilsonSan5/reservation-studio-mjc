@@ -1,5 +1,7 @@
 <script setup>
 import AccordeonItemComponent from "./AccordeonItemComponent.vue";
+import ContactFormComponentVue from "./ContactFormComponent.vue";
+
 </script>
 
 <template>
@@ -52,7 +54,7 @@ import AccordeonItemComponent from "./AccordeonItemComponent.vue";
                 <template v-slot:icon>
                     <img src="/icons/instrument.svg" />
                 </template>
-                <p><b>Instrument :</b></p>
+                <p><b>Instruments :</b></p>
                 <ul>
                     <li>Une batterie (grosse caisse, caisse claire, charleyston)</li>
                     <li>Une guitare électrique</li>
@@ -70,7 +72,7 @@ import AccordeonItemComponent from "./AccordeonItemComponent.vue";
                     <li>Des amplis de guitare</li>
                     <li>Un ampli de basse</li>
                 </ul>
-                <p>
+                <p class="important">
                     Tu peux ramener tes propres instruments. Attention à ne pas les oublier en
                     partant !
                 </p>
@@ -85,7 +87,7 @@ import AccordeonItemComponent from "./AccordeonItemComponent.vue";
                 <ul>
                     <li>5€ pour 1h</li>
                 </ul>
-                <p>Le paiement se fera sur place.</p>
+                <p class="important">Le paiement se fera sur place.</p>
             </AccordeonItemComponent>
 
             <hr />
@@ -96,7 +98,10 @@ import AccordeonItemComponent from "./AccordeonItemComponent.vue";
                 </template>
                 <p> Contenu du texte ... </p>
             </AccordeonItemComponent> -->
+
         </div>
+
+        <ContactFormComponentVue />
     </section>
 </template>
 
@@ -128,6 +133,12 @@ import AccordeonItemComponent from "./AccordeonItemComponent.vue";
 
 .accordion-menu {
     padding-top: 50px;
+}
+
+.important {
+    padding: 10px;
+    background-color: rgb(248, 212, 218);
+    border-radius: 5px;
 }
 
 /* Wave shape */
